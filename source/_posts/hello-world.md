@@ -5,7 +5,6 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ## Quick Start
 
-![](/images/logo-mini-doscom.png)
 
 ### Create a new post
 

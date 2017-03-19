@@ -7,8 +7,9 @@ title: ciazhar
 subtitle:
 description:
 author: Muhammad Hafidz
-language: en
-timezone:
+email: daisetsunakama@gmail.com
+language: id
+timezone: Asia/Jakarta
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -44,7 +45,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: coba
+default_category: uncategorized
 category_map:
 tag_map:
 

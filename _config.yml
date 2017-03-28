@@ -72,3 +72,38 @@ theme: hueman
 deploy:
   type: git
   repo: https://github.com/ciazhar/ciazhar.github.io.git
+
+jsonContent:
+  meta: true
+  keywords: false # language name option
+  dateFormat: undefined # format string
+  pages:
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: true # but only if root keywords option language was set
+    text: true
+    raw: false
+    content: false
+  posts:
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: true # but only if root keywords option language was set
+    text: true
+    raw: false
+    content: false
+    categories: true
+    tags: true

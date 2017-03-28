@@ -4,7 +4,9 @@ date: 2017-03-19 06:19:30
 tags:
   - ui
   - ux
-categories: UI/UX
+categories: Kuliah
+type: imk
+
 ---
 ![](/images/ui-ux/Ui-Ux.jpg)
 ## Pengertian Menu ##

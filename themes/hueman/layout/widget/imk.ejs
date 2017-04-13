@@ -3,7 +3,15 @@
 
         <div class="widget">
 
-            <h3>Interaksi Manusia Komputer</h3>
+            <h3>Interaksi Manusia Komputer</h3><br>
+            <span><a href="<%- url_for(page.path) %>"><%- page.title %></a></span>
+
+            <% site.pages.find({ type: page.type, order: page.order - 1 }).each(function (page) { %>
+              <span>← <a href="<%- url_for(page.path) %>"><%- page.title %></a></span>
+            <% }) %>
+            <% site.pages.find({ type: page.type, order: page.order + 1 }).each(function (page) { %>
+              <span style="float:right"><a href="<%- url_for(page.path) %>"><%- page.title %></a> →</span>
+            <% }) %>
 
         </div>
     </div>

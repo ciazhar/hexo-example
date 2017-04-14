@@ -8,6 +8,7 @@ categories:
   - Kuliah
   - Interaksi Manusia dan Komputer
 ---
+![](/images/ui-ux/Ui-Ux.jpg)
 ## Pendahuluan
 - Tujuan dasar bahasa
   - presisi

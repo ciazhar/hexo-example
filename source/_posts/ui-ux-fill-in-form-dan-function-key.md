@@ -9,6 +9,7 @@ categories:
   - Interaksi Manusia dan Komputer
 
 ---
+![](/images/ui-ux/Ui-Ux.jpg)
 # FILL IN FORM
 
 ## Definisi Fill in Form :

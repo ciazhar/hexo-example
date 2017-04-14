@@ -9,8 +9,8 @@ type: imk
 
 ---
 
-# Sekilas Tentang KPM Udinus
-
+# Sekilas Tentang KPM UDINUS
+Kantor Penjaminan Mutu Univeristas Dian Nuswantoro adalah suatu badan internal di bawah Universitas Dian Nuswantoro yang bertujuan untuk mengembangkan sistem penjaminan mutu, menyelenggarakan sistem audit mutu internal dalam rangka pelaksanaan sistem penjaminan mutu dan menjamin perbaikan mutu secara terus menerus terhadap pencapaian kinerja penyelenggaraan pendidikan tinggi di Universitas Dian Nuswantoro.
 
 # Kritik dan Saran
 - Copyright telah kadaluarsa. Seharusnya selalu diperbaharui secara konsekuen. Kemudian perlu ditambahkan instansi (udinus) karena KPM sendiri berada di bawah udinus.
@@ -18,7 +18,7 @@ type: imk
 ![](/images/kritik-kpm-udinus/copyright.png)
 
 
-- Foto dari Anggota KPM tidak proporsional dan tidak rapi. Pada laman web terlalu kecil sedangkan pada mobile terlalu besar. Pada laman web foto tidak center dan penulisanya tidak rapi. Seharusnya kontenya dikonfigurasi agar progresive dan rapi. Saya menyarankan menggunakan framework seperti bootstrap agar tidak susah dalam mengkonfigurasinya.
+- Foto dari Anggota KPM tidak proporsional dan tidak rapi. Pada laman web terlalu kecil sedangkan pada mobile terlalu besar. Pada laman web foto tidak center dan penulisanya tidak rapi. Seharusnya kontenya dikonfigurasi agar progresive dan rapi. Kami menyarankan menggunakan grid system yang ada pada bootstrap agar lebih mudah dalam mengkonfigurasinya.
 
 ![](/images/kritik-kpm-udinus/foto.png)
 
@@ -28,7 +28,7 @@ type: imk
 ![](/images/kritik-kpm-udinus/index.png)
 
 
-- Terdapat 2 tombol home pada halama utama yang membingungkan user
+- Terdapat 2 tombol home pada halama utama yang membingungkan user. Seharusnya satu saja sudah cukup.
 
 ![](/images/kritik-kpm-udinus/home.png)
 
@@ -43,10 +43,17 @@ type: imk
 ![](/images/kritik-kpm-udinus/lamankosong.png)
 
 
-- Navbar kurang menarik dan terlalu gelap
-
-
 - Perlu dicantumkan kontak person pada bagian bawah web. Sehingga apabila terjadi permasalahan pada webiste dan sebagainya dapat langsung ditanggulangi.
 
 
-- Perlu mengubah designnya karena menurut saya terlalu jadul
+- Perlu ditambahkan fasilitash search untuk memudahkan user mencari konten yang dikehendaki.
+
+
+
+- Perlu dicantumkan kontak person pada bagian bawah web. Sehingga apabila terjadi permasalahan pada webiste dan sebagainya dapat langsung ditanggulangi. Seperti pada  http://kjm.ugm.ac.id/
+
+
+- Perlu ditambahkan jadwal agenda kegiatan mengenai kpm. Seperti pada http://kjm.ugm.ac.id/
+
+
+- Perlu ditambahkan laman mengenai sambutan ketua kpm untuk menambah kesan hangat kepada pengunjung  webste. Seperti pada http://kjm.ugm.ac.id/sambutan-rektor-universitas-gadjah-mada-prof-dr-pratikno-m-soc-sc/

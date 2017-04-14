@@ -4,7 +4,7 @@ date: 2017-04-11 15:43:58
 tags:
   - ui
   - ux
-categories: Kuliah
+categories: Interaksi Manusia Komputer
 type: imk
 
 ---

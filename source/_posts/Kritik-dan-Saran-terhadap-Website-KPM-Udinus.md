@@ -4,8 +4,9 @@ date: 2017-04-11 15:43:58
 tags:
   - ui
   - ux
-categories: Interaksi Manusia Komputer
-type: imk
+categories:
+  - Kuliah
+  - Interaksi Manusia dan Komputer
 
 ---
 

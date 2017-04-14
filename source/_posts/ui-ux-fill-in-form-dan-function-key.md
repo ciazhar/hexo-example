@@ -4,8 +4,9 @@ date: 2017-04-14 22:27:25
 tags:
   - ui
   - ux
-categories: Interaksi Manusia Komputer
-type: imk
+categories:
+  - Kuliah
+  - Interaksi Manusia dan Komputer
 
 ---
 # FILL IN FORM

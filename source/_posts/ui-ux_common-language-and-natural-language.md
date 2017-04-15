@@ -5,7 +5,7 @@ tags:
   - ui
   - ux
 categories:
-  - Kuliah
+  - Teknologi
   - Interaksi Manusia dan Komputer
 ---
 ![](/images/ui-ux/Ui-Ux.jpg)

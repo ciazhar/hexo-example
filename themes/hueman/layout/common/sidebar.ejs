@@ -15,12 +15,17 @@
         </ul>
     </div>
 
-    <% if (is_post()) { %>
+    <!-- <% if (is_post()) { %>
         <%- partial('post/nav', {post: page}) %>
-    <% } %>
+    <% } %> -->
 
     <div class="widgets-container">
-      <% if(is_home()){ %>
+      <% if (theme.widgets) { %>
+          <% theme.widgets.forEach(function(widget) { %>
+              <%- partial('widget/'+widget) %>
+          <% }) %>
+      <% } %>
+      <!-- <% if(is_home()){ %>
           <% if (theme.widgets) { %>
               <% theme.widgets.forEach(function(widget) { %>
                   <%- partial('widget/'+widget) %>
@@ -31,6 +36,6 @@
         <% if (page.type === 'imk') { %>
             <%- partial('widget/imk') %>
         <% } %>
-      <% } %>
+      <% } %> -->
     </div>
 </aside>

@@ -2,8 +2,7 @@
 title: Kritik dan Saran terhadap Website KPM Udinus
 date: 2017-04-11 15:43:58
 tags:
-  - ui
-  - ux
+
 categories:
   - Teknologi
   - Interaksi Manusia dan Komputer

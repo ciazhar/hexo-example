@@ -2,8 +2,7 @@
 title: Menu
 date: 2017-03-19 06:19:30
 tags:
-  - ui
-  - ux
+  - ui-ux
 categories:
   - Teknologi
   - Interaksi Manusia dan Komputer

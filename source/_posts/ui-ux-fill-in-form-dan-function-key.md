@@ -2,8 +2,7 @@
 title: Fill in form dan Function Key
 date: 2017-04-14 22:27:25
 tags:
-  - ui
-  - ux
+  - ui-ux
 categories:
   - Teknologi
   - Interaksi Manusia dan Komputer

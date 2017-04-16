@@ -2,8 +2,7 @@
 title: Bahasa Perintah dan Bahasa Alami
 date: 2017-03-27 06:06:11
 tags:  
-  - ui
-  - ux
+  - ui-ux
 categories:
   - Teknologi
   - Interaksi Manusia dan Komputer

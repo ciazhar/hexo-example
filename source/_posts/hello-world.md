@@ -1,5 +1,5 @@
 ---
-title: Getting Starterd with Hexo
+title: Getting Started with Hexo
 
 categories:
   - Pemrograman

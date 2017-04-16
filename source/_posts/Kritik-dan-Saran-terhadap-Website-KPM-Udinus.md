@@ -44,17 +44,21 @@ Kantor Penjaminan Mutu Univeristas Dian Nuswantoro adalah suatu badan internal d
 ![](/images/kritik-kpm-udinus/lamankosong.png)
 
 
-- Perlu dicantumkan kontak person pada bagian bawah web. Sehingga apabila terjadi permasalahan pada webiste dan sebagainya dapat langsung ditanggulangi.
-
-
 - Perlu ditambahkan fasilitash search untuk memudahkan user mencari konten yang dikehendaki.
 
+![](/images/kritik-kpm-udinus/pencarian.png)
 
 
 - Perlu dicantumkan kontak person pada bagian bawah web. Sehingga apabila terjadi permasalahan pada webiste dan sebagainya dapat langsung ditanggulangi. Seperti pada  http://kjm.ugm.ac.id/
 
+![](/images/kritik-kpm-udinus/kontak-person.png)
+
 
 - Perlu ditambahkan jadwal agenda kegiatan mengenai kpm. Seperti pada http://kjm.ugm.ac.id/
 
+![](/images/kritik-kpm-udinus/agenda.png)
+
 
 - Perlu ditambahkan laman mengenai sambutan ketua kpm untuk menambah kesan hangat kepada pengunjung  webste. Seperti pada http://kjm.ugm.ac.id/sambutan-rektor-universitas-gadjah-mada-prof-dr-pratikno-m-soc-sc/
+
+![](/images/kritik-kpm-udinus/sambutan-kepala.png)

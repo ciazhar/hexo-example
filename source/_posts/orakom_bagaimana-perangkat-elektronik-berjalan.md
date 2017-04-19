@@ -25,10 +25,6 @@ _________________________________
 |   0   |   1   |   0   |   0   | --> Biner
 |_______|_______|_______|_______|
 ```
-Sedikit Info tentang Processor, dia memiliki bagian yang memiliki fungsi masing masing. Bagian tersebut diantaranya adalah :
-- ALU
-- Control Unit
-- Register
 
 Lanjut, data yang ada pada register kemudian diproses, apakah akan dioutputkan atau akan disimpan sesuai dengan yang kita inginkan. Apabila ingin dioutputkan data akan ditransfer menuju perangkat keluaran yang dikehendaki, semisal layar monitor. Dan apabila ingin disimpan sebelumnya akan dikonversi menuju kode heksal. Proses konversi dari kode biner dan heksal dan sebaliknya dilakukan oleh Sistem Operasi.
 

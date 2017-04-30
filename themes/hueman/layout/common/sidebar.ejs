@@ -19,22 +19,28 @@
         <%- partial('post/nav', {post: page}) %>
     <% } %> -->
 
-    <div class="widgets-container">
+    <div class="widget-wrap">
       <% if (theme.widgets) { %>
           <% theme.widgets.forEach(function(widget) { %>
               <%- partial('widget/'+widget) %>
           <% }) %>
       <% } %>
+
       <!-- <% if(is_home()){ %>
-          <% if (theme.widgets) { %>
+        <% if (theme.widgets) { %>
               <% theme.widgets.forEach(function(widget) { %>
                   <%- partial('widget/'+widget) %>
               <% }) %>
           <% } %>
       <% } else { %>
         <%- partial('widget/profile') %>
-        <% if (page.type === 'imk') { %>
-            <%- partial('widget/imk') %>
+        <% if (is_category('Teknologi')) { %>
+          <div class="widget widget-title">
+            <h1>Index</h1><br>
+            <% site.categories.findOne({name: 'Teknologi'}).posts.each(function(post){ %>
+              <li><a href="<%- url_for(post.path) %>"><%- post.title %></a><br></li>
+            <%}) %>
+          </div>
         <% } %>
       <% } %> -->
     </div>

@@ -2,8 +2,41 @@
     <div class="widget-wrap widget-list">
 
         <div class="widget">
+          <h1>a</h1>
+          
+          <!-- <%- list_categories({class : 'Teknologi'}) %> -->
 
-            <h3>Interaksi Manusia Komputer</h3><br>
+          <!-- <% if (is_category('Teknologi')) { %>
+            <% site.posts.each(function(page){%>
+              <a href="<%- url_for() %>"><%- page.title %></a>
+              <br>
+            <% }); %>
+          <% } %> -->
+
+          <!-- <% if (is_category('Teknologi')) { %>
+
+              <% site.pages.find({ type: '', order: page.order - 1 }).each(function (page) { %>
+                  <%= page.title%>
+              <% }) %>
+              <% site.pages.find({ type: page.type, order: page.order + 1 }).each(function (page) { %>
+
+              <% }) %>
+
+          <% } %> -->
+
+          <!-- {% for section in site.data.nav %}
+            <ul class='nav'>
+              <span>{{ section.title }}</span>
+              <ul class='nav'>
+                {% for item in section.items %}
+                  <li>
+                    <a href='{{item.href || url_for(item.id + ".html") }}'{% if item.id == page.id %} class='active'{% endif %}>{{item.title}}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </ul>
+          {% endfor %} -->
+            <!-- <h3>Interaksi Manusia Komputer</h3><br>
             <span><a href="<%- url_for(page.path) %>"><%- page.title %></a></span>
 
             <% site.pages.find({ type: page.type, order: page.order - 1 }).each(function (page) { %>
@@ -11,7 +44,7 @@
             <% }) %>
             <% site.pages.find({ type: page.type, order: page.order + 1 }).each(function (page) { %>
               <span style="float:right"><a href="<%- url_for(page.path) %>"><%- page.title %></a> →</span>
-            <% }) %>
+            <% }) %> -->
 
         </div>
     </div>

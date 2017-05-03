@@ -7,7 +7,7 @@ categories:
   - Spring Boot
 ---
 
-![](/images/springboot.png)
+![](/images/springboot.jpg)
 # Sekilas tentang Spring Boot
 
 # Development Environment untuk Spring Boot

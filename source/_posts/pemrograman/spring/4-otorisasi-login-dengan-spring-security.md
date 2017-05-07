@@ -3,10 +3,9 @@ title: Otorisasi Login dengan spring security
 date: 2017-04-23 14:17:37
 categories:
   - Pemrograman
-  - Spring Framework
-  - Spring Boot
+  - Spring
 ---
-![](/images/springboot.jpg)
+![](/images/springboot.png)
 # Bikin Otorisasi Login #
 - Tambahkan dependency (pom.xml)
   ```

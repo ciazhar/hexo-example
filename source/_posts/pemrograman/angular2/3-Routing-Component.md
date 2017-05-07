@@ -5,7 +5,7 @@ categories:
   - Pemrograman
   - Angular
 ---
-![](/images/angular2.png)
+![](/images/angular.png)
 ## Routing Top Level Component
 1. Sebelum melakukan routing kita akan buat terlebih dahulu top level componentnya yaitu about dan welcome. Struktur foldernya akan menjadi seperti ini
 ```

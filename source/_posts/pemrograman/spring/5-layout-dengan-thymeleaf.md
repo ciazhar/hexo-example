@@ -3,10 +3,9 @@ title: Thymeleaf
 date: 2017-04-23 14:17:38
 categories:
   - Pemrograman
-  - Spring Framework
-  - Spring Boot
+  - Spring
 ---
-![](/images/springboot.jpg)
+![](/images/springboot.png)
 # Layout dengan Thymeleaf
   Thymeleaf adalah template engine untuk JVM. Dia support HTMl, XML, TEXT, CSS, JS, dan RAW. Thymeleaf emmpunya kemampuan yang dikenal dengan Natural Template yaitu dimana kita dapat membuat 2 buah value yang sama. Hal ini mempermudah antara designer dan programer agar dapat bekerja bersama. Ketika value dari backed belum ada designer dapat menggunakan value html.
     ```

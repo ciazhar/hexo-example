@@ -3,10 +3,9 @@ title: Jasper Report
 date: 2017-04-23 14:17:39
 categories:
   - Pemrograman
-  - Spring Framework
-  - Spring Boot
+  - Spring
 ---
-![](/images/springboot.jpg)
+![](/images/springboot.png)
 
 1. Tambahkan dependency
 ```xml

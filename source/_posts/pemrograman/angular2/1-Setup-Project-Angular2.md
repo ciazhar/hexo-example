@@ -5,7 +5,7 @@ categories:
   - Pemrograman
   - Angular
 ---
-![](/images/angular2.png)
+![](/images/angular.png)
 ## Menginstall Node dan NPM
 Untuk menginstall node saya menyarankan menggunakan tutorial dari [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04) dengan menggunakan nvm.
 

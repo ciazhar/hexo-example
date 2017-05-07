@@ -5,7 +5,7 @@ categories:
   - Pemrograman
   - Android
 ---
-![](/images/android.jpg)
+![](/images/android.png)
 # Android for Beginner
 ## Layouting
 ### View

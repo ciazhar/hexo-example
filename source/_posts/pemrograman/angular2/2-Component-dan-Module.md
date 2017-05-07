@@ -5,7 +5,7 @@ categories:
   - Pemrograman
   - Angular
 ---
-![](/images/angular2.png)
+![](/images/angular.png)
 ## Membuat Komponen
 Untuk membuat componen dapat menggunakan perintah sebagai berikut
 ```

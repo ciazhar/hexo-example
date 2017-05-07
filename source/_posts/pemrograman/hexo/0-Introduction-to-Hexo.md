@@ -1,5 +1,5 @@
 ---
-title: 0. Introduction to Hexo
+title: Introduction to Hexo
 date: 2017-05-07 12:44:17
 categories:
   - Pemrograman

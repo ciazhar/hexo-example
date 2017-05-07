@@ -3,7 +3,7 @@ title: Routing Component
 date: 2017-04-28 10:01:38
 categories:
   - Pemrograman
-  - Angular2
+  - Angular
 ---
 ![](/images/angular2.png)
 ## Routing Top Level Component

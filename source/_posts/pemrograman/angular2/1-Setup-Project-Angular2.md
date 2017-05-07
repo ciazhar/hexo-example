@@ -3,7 +3,7 @@ title: Setup Project Angular2
 date: 2017-04-28 10:01:36
 categories:
   - Pemrograman
-  - Angular2
+  - Angular
 ---
 ![](/images/angular2.png)
 ## Menginstall Node dan NPM

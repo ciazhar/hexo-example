@@ -9,6 +9,11 @@ sticky: true
 ![](/images/hexo.png)
 # Sekilas tentang Hexo
 
-[Hexo](http://hexo.io/) merupakan suatu framework untuk mempermudah dalam Blog. Untuk mengulis konten pada Hexo, dapat menggunakan [markdown](https://en.wikipedia.org/wiki/Markdown) yang kemudian akan dicompile menjadi html. Untuk Layout dan Design dapat menggunkaan [EJS](http://ejs.co/).
+[Hexo](http://hexo.io/) merupakan suatu framework untuk mempermudah dalam membuat Blog atau Website probadi. Untuk mengulis konten pada Hexo, dapat menggunakan [markdown](https://en.wikipedia.org/wiki/Markdown) yang kemudian akan dicompile menjadi html. Untuk Layout dan Design dapat menggunkaan [EJS](http://ejs.co/).
 
 # Roadmap Belajar Hexo
+- [Setup Project Hexo]()
+- [Menulis Konten pada Hexo]()
+- [Mengganti Tema pada Hexo]()
+- [Mengkonfigurasi Teman pada Hexo]()
+- [Hosting Hexo ke Github Page]()

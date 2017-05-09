@@ -13,3 +13,6 @@ sticky: true
 [Angular](https://angular.io) merupakan framework untuk membangun aplikasi frontend web, desktop dan mobile. Angular sendiri berbasis bahasa pemrograman Typescript(https://www.typescriptlang.org/) dan [Javascript](https://www.javascript.com). Pada Tutorial kali ini kita akan coba membuat aplikasi angular berbasis frontend web.
 
 # Roadmap Belajar Angular
+- [Setup Project Angular]()
+- [Component dan Module]()
+- [Routing]()

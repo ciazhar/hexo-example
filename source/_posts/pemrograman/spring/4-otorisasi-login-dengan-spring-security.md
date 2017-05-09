@@ -8,14 +8,14 @@ categories:
 ![](/images/springboot.png)
 # Bikin Otorisasi Login #
 - Tambahkan dependency (pom.xml)
-  ```
+  ```xml
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-security</artifactId>
     </dependency>
   ```
 - Bikin KonfigurasiSecurity (main/java/domain/config/KonfigurasiSecurity.java)
-  ```
+  ```java
     @Configuration
     @EnableWebSecurity
     @EnableGlobalMethodSecurity(prePostEnabled = true)
@@ -70,7 +70,7 @@ categories:
   ```
 - Register UI(src/main/java/domain/config/KonfigurasiWeb.java)
   Karena form login kita tidak menggunakan controller, maka harus didaftarkan terlebih dahulu.
-  ```
+  ```java
     @Configuration
     public class KonfigurasiWeb extends WebMvcConfigurerAdapter{
 
@@ -83,7 +83,7 @@ categories:
   ```
 
 - Bikin UI Login(main/resources/login.html)
-  ```
+  ```html
     <html xmlns:th="http://www.thymeleaf.org">
       <head>
 

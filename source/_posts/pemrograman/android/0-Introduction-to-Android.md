@@ -13,3 +13,6 @@ sticky: true
 [Android](https://developer.android.com/) merupakan Sistem Operasi untuk mobile. Aplikasi android native sendiri dapat dibangun menggunakan XML(untuk design) dan Java(untuk logic). Pada Tutorial kali ini kita akan coba membuat aplikasi Android native.
 
 # Roadmap Belajar Android Native
+- [Setup Project Android]()
+- [View]()
+- [Java]()

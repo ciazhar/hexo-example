@@ -6,8 +6,9 @@ categories:
   - Angular
 ---
 ![](/images/angular.png)
-## Membuat Komponen
-Untuk membuat componen dapat menggunakan perintah sebagai berikut
+## Komponen
+Komponen ini dapat digunakan untuk membuat suatu layout atau menu. Contoh komponen yang digunakan sebagai layout yaitu seperti navbar, sidebar dan footer. Ada juga komponen yang digunakan sebagai menu seperti beranda, pengaturan, profil dan sebagainya.
+Untuk membuat componen dapat menggunakan perintah sebagai berikut :
 ```
 ng g component NAMA_COMPONENT
 ```
@@ -19,21 +20,17 @@ app/
 ├── app.component.spec.ts
 ├── app.component.ts
 ├── app.module.ts
-├── navbar
-│   ├── navbar.component.css
-│   ├── navbar.component.html
-│   ├── navbar.component.spec.ts
-│   └── navbar.component.ts
-└── sidebar
-    ├── sidebar.component.css
-    ├── sidebar.component.html
-    ├── sidebar.component.spec.ts
-    └── sidebar.component.ts
+├── NAMA_COMPONENT
+|   ├── NAMA_COMPONENT.component.css
+|   ├── NAMA_COMPONENT.component.html
+|   ├── NAMA_COMPONENT.component.spec.ts
+|   └── NAMA_COMPONENT.component.ts
 ```
-Navbar dan Sidebar merupakan contoh dari Top Level Component
+
 
 ## Membuat Module
-Untuk membuat module dapat menggunakan
+Module ini seperti package atau folder. Dia berfungsi untuk menampung beberapa component yang memiliki fungsi yang sama. Analoginya seperti suatu transaksi memiliki aksi seperti jual, beli & rekap. Transaksi merupakan modulenya dan jual beli & rekap adalah componentnya.
+Untuk membuat module dapat menggunakan perintah sebagai berikut :
 ```
 ng g module NAMA_MODULE
 ```
@@ -45,20 +42,15 @@ app/
 ├── app.component.spec.ts
 ├── app.component.ts
 ├── app.module.ts
-├── navbar
-│   ├── navbar.component.css
-│   ├── navbar.component.html
-│   ├── navbar.component.spec.ts
-│   └── navbar.component.ts
-├── sidebar
-│   ├── sidebar.component.css
-│   ├── sidebar.component.html
-│   ├── sidebar.component.spec.ts
-│   └── sidebar.component.ts
-└── transaksi
-    └── transaksi.module.ts
+├── NAMA_COMPONENT
+│   ├── NAMA_COMPONENT.component.css
+│   ├── NAMA_COMPONENT.component.html
+│   ├── NAMA_COMPONENT.component.spec.ts
+│   └── NAMA_COMPONENT.component.ts
+└── NAMA_MODULE
+    └── NAMA_MODULE.module.ts
 ```
-Transaksi merupakan contoh module. Kemudian kita buat beberapa component di dalamnya sehingga sebagai berikut
+Kemudian kita buat beberapa component di dalamnya sehingga sebagai berikut
 ```
 app/
 ├── app.component.css
@@ -66,32 +58,27 @@ app/
 ├── app.component.spec.ts
 ├── app.component.ts
 ├── app.module.ts
-├── navbar
-│   ├── navbar.component.css
-│   ├── navbar.component.html
-│   ├── navbar.component.spec.ts
-│   └── navbar.component.ts
-├── sidebar
-│   ├── sidebar.component.css
-│   ├── sidebar.component.html
-│   ├── sidebar.component.spec.ts
-│   └── sidebar.component.ts
-└── transaksi
-    ├── beli
-    │   ├── beli.component.css
-    │   ├── beli.component.html
-    │   ├── beli.component.spec.ts
-    │   └── beli.component.ts
-    ├── jual
-    │   ├── jual.component.css
-    │   ├── jual.component.html
-    │   ├── jual.component.spec.ts
-    │   └── jual.component.ts
-    ├── rekap
-    │   ├── rekap.component.css
-    │   ├── rekap.component.html
-    │   ├── rekap.component.spec.ts
-    │   └── rekap.component.ts
-    └── transaksi.module.ts
+├── NAMA_COMPONENT
+│   ├── NAMA_COMPONENT.component.css
+│   ├── NAMA_COMPONENT.component.html
+│   ├── NAMA_COMPONENT.component.spec.ts
+│   └── NAMA_COMPONENT.component.ts
+└── NAMA_MODULE
+    ├── NAMA_COMPONENT1
+    │   ├── NAMA_COMPONENT1.component.css
+    │   ├── NAMA_COMPONENT1.component.html
+    │   ├── NAMA_COMPONENT1.component.spec.ts
+    │   └── NAMA_COMPONENT1.component.ts
+    ├── NAMA_COMPONENT2
+    │   ├── NAMA_COMPONENT2.component.css
+    │   ├── NAMA_COMPONENT2.component.html
+    │   ├── NAMA_COMPONENT2.component.spec.ts
+    │   └── NAMA_COMPONENT2.component.ts
+    ├── NAMA_COMPONENT3
+    │   ├── NAMA_COMPONENT3.component.css
+    │   ├── NAMA_COMPONENT3.component.html
+    │   ├── NAMA_COMPONENT3.component.spec.ts
+    │   └── NAMA_COMPONENT3.component.ts
+    └── NAMA_MODULE.module.ts
 ```
-Beli, jual dan rekap merupakan contoh component dari module transaksi
+NAMA_COMPONENT1, NAMA_COMPONENT2 dan NAMA_COMPONENT3 merupakan component dari NAMA_MODULE. Sedangkan NAMA_COMPONENT dikenal sebagai top level component.

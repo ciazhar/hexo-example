@@ -1,13 +1,16 @@
 ---
-title: Routing Component
+title: Routing
 date: 2017-04-28 10:01:38
 categories:
   - Pemrograman
   - Angular
 ---
 ![](/images/angular.png)
+Laman Web pada umunya untuk berkomunikasi dengan menggunakan hyperlink. Sementara itu untuk berkomunikasi antar komponen, Angular menggunakan routing. Routing hampir seperti mapping di java. Untuk pergi ke komponen lain, jalurnya harus didefinisikan terlebih dahulu.
+Routing sendiri berdasarkan letaknya dibedakan menjadi 2 yaitu routing Top Level Component dan routing Component pada Module.
+
 ## Routing Top Level Component
-1. Sebelum melakukan routing kita akan buat terlebih dahulu top level componentnya yaitu about dan welcome. Struktur foldernya akan menjadi seperti ini
+1. Sebelum melakukan routing kita akan buat terlebih dahulu membuat top level componentnya yaitu about dan welcome. Struktur foldernya akan menjadi seperti ini
 ```
 src/app/
 ├── about
@@ -21,6 +24,8 @@ src/app/
 ├── app.component.ts
 ├── app.module.ts
 ├── navbar
+
+
 │   ├── navbar.component.css
 │   ├── navbar.component.html
 │   ├── navbar.component.spec.ts
@@ -101,19 +106,41 @@ const routingAplikasi: Routes = [
 ```
 
 
-## Routing module
+## Routing Component pada Module
 
-- import routing (transaksi.module.ts)
+- import Router module (transaksi.module.ts)
 ```ts
 import { RouterModule, Routes } from '@angular/router';
 ```
-- buat Routes beserta path
+- buat Routes beserta path (transaksi.module.ts)
 ```ts
-const routingTransaksi : Routes[
-  { path: "/transaksi/beli", componen:  }
+const routingTransaksi : Routes = [
+  { path: "transaksi/beli", component: BeliComponent },
+  { path: "transaksi/jual", component: JualComponent },
+  { path: "transaksi/rekap", component: RekapComponent }
 ]
 ```
-- import Routes
-
-app module ts
-- tambah path untuk routing module
+- Inisialisasi Routes (transaksi.module.ts)
+```ts
+@NgModule({
+  ....
+  imports: [
+    RouterModule.forChild(routingTransaksi)
+  ]
+```
+- import TransaksiComponent(app.module.ts)
+```
+import { TransaksiModule } from './transaksi/transaksi.module';
+```
+- tambah path untuk routing module(app.module.ts)
+```ts
+{ path: "transaksi", redirectTo: "/transaksi", pathMatch: "full"}
+```
+- Inisialisasi Routes (app.module.ts)
+```ts
+@NgModule({
+  ....
+  imports: [
+    TransaksiModule,
+  ]
+```

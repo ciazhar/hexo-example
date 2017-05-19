@@ -8,11 +8,13 @@ sticky: true
 ---
 
 ![](/images/spring.png)
-# Sekilas tentang Spring Boot
+# Sekilas tentang Spring
 
-[Spring Boot](http://projects.spring.io/spring-boot/) merupakan suatu framework untuk mempermudah dalam membangun aplikasi spring tanpa harus mengkonfigurasi setiap komponenya. Spring sendiri adalah framework untuk membuat aplikasi berbasis enterprise menggunakan [bahasa-bahasa JVM](https://en.wikipedia.org/wiki/List_of_JVM_languages). Pada Tutorial kali ini kita akan coba membuat aplikasi spring berbasis backend web.
+[Spring Framework](http://spring.io) merupakan suatu framework untuk mempermudah dalam membangun aplikasi berbasis enterprise menggunakan [bahasa-bahasa JVM](https://en.wikipedia.org/wiki/List_of_JVM_languages). Secara konsep, project spring yang akan kita buat akan  menggunakan beberapa design pattern seperti [Model View Controller](), [Dependecy Injection](), [Aspec Oriented Programming](), [Object Relational Mapping]() dan lainya. Apabila anda merasa asing dengan beberapa istilah tersebut, silahkan anda mencari referensi di internet karena kita tidak akan membahas terlalu detail mengenai beberapa istilah tersebut.
+Pada Tutorial kali ini kita akan coba membuat aplikasi berbasis backend web menggunakan Spring Framework.
 
 # Roadmap Belajar Spring
+Berikut sekilas peta jalan yang akan kita pelajari untuk dapat membuat aplikasi spring :
 - [Setup Project Spring Boot](https://ciazhar.github.io/2017/04/23/pemrograman/spring/1-setup-project/)
 - [Membuat Web Menggunakan Spring Boot dan Thyeleaf](https://ciazhar.github.io/2017/04/23/pemrograman/spring/2-membuat-web-sederhana-dengan-spring-boot-starter-web-dan-thymeleaf/)
 - [Setup Project Untuk CRUD dengan Spring Data JPA dan MySQL]()
@@ -27,5 +29,5 @@ sticky: true
 - [Membuat Report dengan Jasper Report](https://ciazhar.github.io/2017/04/23/pemrograman/spring/6-jasper-report/)
 - [Oauth2 dengan Spring Security]()
 - [Single Signed On dengan Spring Security]()
-- [Stack Spring Framework]()
+- [Stack untuk Spring Framework]()
 - [Full Stack Application]()

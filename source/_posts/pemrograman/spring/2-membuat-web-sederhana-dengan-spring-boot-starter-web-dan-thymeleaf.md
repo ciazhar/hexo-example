@@ -6,9 +6,10 @@ categories:
   - Spring
 ---
 ![](/images/springboot.png)
+[Pada tutorial sebelumnya](https://ciazhar.github.io/2017/04/23/pemrograman/spring/1-setup-project/) kita sudah melakukan setup project spring pada perangkat anda. Sekarang kita akan coba melihat bagaimana aplikasi spring dibuat.
 Untuk pertama kali kita akan coba membuat laman web sederhana. Langkah-langkahnya adalah sebagai berikut :
 
-- Buat controller sederhana (main/java/domain/Controllers/HaloController.java)
+- Membuat controller sederhana (main/java/domain/Controllers/HaloController.java)
 ```java
   @Controller
   public class HaloController{
@@ -20,10 +21,10 @@ Untuk pertama kali kita akan coba membuat laman web sederhana. Langkah-langkahny
 ```
 Keterangan :
 1. `@Controller` digunakan untuk menandai bahwa class `HaloController` adalah class controller
-2. `@RequestMapping` digunakan untuk mapping url metode halo yang akan digunakan oleh view bernama `index`
+2. `@RequestMapping` digunakan untuk melakukan mapping url pada metode bernama halo ke `/`. Kemudian controller itu akan di tampilkan pada view bernama `index`.
 
 
-- Buat file HTML (main/resources/templates/index.html)
+- Membuat file HTML (main/resources/templates/index.html)
 ```html
   <html xmlns:th="http://www.thymeleaf.org">
     <head>

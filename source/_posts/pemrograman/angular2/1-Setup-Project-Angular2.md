@@ -6,12 +6,18 @@ categories:
   - Angular
 ---
 ![](/images/angular.png)
-## Menginstall Node dan NPM
+## Menginstall Node
 Untuk menginstall node saya menyarankan menggunakan tutorial dari [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04) dengan menggunakan nvm.
 
+# Menginstall npm
+Untuk menginstall npm cukup tulis kode berikut pada terminal anda (khusus untuk ubuntu):
+```
+  sudo apt install npm
+```
+Atau apabila anda menggunakan Sistem Operasi yang lain anda bisa mencarinya di internet.
 
 ## Menginstall Angular CLI
-Angular ini adalah salah satu tools untuk membuat aplikasi angular2. Untuk menggunakanya cukup ketikkan kode berikut apda terminal.
+Angular ini adalah salah satu tools untuk membuat aplikasi angular2. Untuk menggunakanya cukup tulis kode berikut pada terminal anda :
 ```
   npm install -g @angular/cli
 ```
@@ -22,7 +28,7 @@ Angular ini adalah salah satu tools untuk membuat aplikasi angular2. Untuk mengg
 ```
 Setelah itu akan dibuat struktur folder sebagai berikut :
 ```
-angular2-spring-boot-pegadaian/
+NAMA_FOLDER/
 ├── .git
 │   ├── branches
 │   ├── COMMIT_EDITMSG
@@ -119,7 +125,6 @@ Hasilnya dapat anda lihat di browser pada `localhost:4200`.
 ## Build Project
 Untuk running project dapat gunakan code berikut pada terminal
 ```
-cd NAMA_PROJECT
 ng serve
 ```
 Hasilnya dapat anda lihat pada folder dist
@@ -151,12 +156,12 @@ Arsitekturnya kurang lebih seperti berikut
 ```
   Aplikasi
   ├── Top Level Component
-  │   ├── Module
-  │   │   ├── Component
-  |   |   |   |── Typescript
-  |   |   |   |── HTML
+  ├── Module
+      ├── Component
+          |── File Typescript/JS
+          |── File HTML
 ```
-Penjelasanya adalah setiap aplikasi terdiri dari satu atau lebih Component. Components ini menyusun Kelompok dari Module tertentu. Begitu juga dengan Module yang tersusun dari satu atau lebih Component. Component sendiri dibuat berdasarkan file Typescript dan HTML. Berikut contoh sederhananya:
+Penjelasanya adalah setiap aplikasi terdiri dari satu atau lebih Component. Module yang tersusun dari satu atau lebih Component. Component sendiri dibuat berdasarkan file Typescript dan HTML. Berikut contoh sederhananya:
 ```
   Aplikasi Tabungan Emas
   ├── Sidebar Component

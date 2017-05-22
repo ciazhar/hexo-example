@@ -11,7 +11,7 @@ sticky: true
 # Sekilas tentang Spring
 
 [Spring Framework](http://spring.io) merupakan suatu framework untuk mempermudah dalam membangun aplikasi berbasis enterprise menggunakan [bahasa-bahasa JVM](https://en.wikipedia.org/wiki/List_of_JVM_languages). Secara konsep, project spring yang akan kita buat akan  menggunakan beberapa design pattern seperti [Model View Controller](), [Dependecy Injection](), [Aspec Oriented Programming](), [Object Relational Mapping]() dan lainya. Apabila anda merasa asing dengan beberapa istilah tersebut, silahkan anda mencari referensi di internet karena kita tidak akan membahas terlalu detail mengenai beberapa istilah tersebut.
-Pada Tutorial kali ini kita akan coba membuat aplikasi berbasis backend web menggunakan Spring Framework.
+Pada Tutorial kali ini kita akan coba membuat aplikasi untuk backend web menggunakan Spring Framework.
 
 # Roadmap Belajar Spring
 Berikut sekilas peta jalan yang akan kita pelajari untuk dapat membuat aplikasi spring :

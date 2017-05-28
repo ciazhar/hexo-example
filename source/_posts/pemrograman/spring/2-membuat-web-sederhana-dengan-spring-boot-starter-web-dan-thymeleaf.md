@@ -1,5 +1,5 @@
 ---
-title: Membuat Laman Web Sederhana
+title: Membuat Laman Web Sederhana denga Spring Boot dan Thymeleaf
 date: 2017-04-23 14:17:30
 categories:
   - Pemrograman
@@ -66,4 +66,4 @@ Selain itu kita juga dapat menggunakanya untuk melakukan link sesuai mapping di 
 
 
 - Memasang Library (/src/main/resources)
-Jika kita lihat pada html diatas kita memerlukan beberapa library yaitu bootstrap dan jquery. Library tersebut dapat anda download di official masing-masing library tersebut. Kemudian masukkan ke /src/main/resources/css untuk file CSS dan /src/main/resources/js untuk file JS.
+Jika kita lihat pada html diatas kita memerlukan beberapa library yaitu bootstrap dan jquery. Library tersebut dapat anda download di official masing-masing library tersebut. Kemudian masukkan ke /src/main/resources/css untuk file CSS dan /src/main/resources/js untuk file JS. Jika anda asset diinjek menggunakan CDN anda dapat melewati langkah berikut.

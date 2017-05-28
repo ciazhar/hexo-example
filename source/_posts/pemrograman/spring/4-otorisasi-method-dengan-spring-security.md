@@ -1,8 +1,11 @@
 ---
 title: Otorisasi methode dengan Spring Security
 date: 2017-05-27 16:56:05
-tags:
+categories:
+  - Pemrograman
+  - Spring
 ---
+![](/images/springboot.png)
 
 Require :
 - otorisasi login dengan spring security

@@ -1,8 +1,11 @@
 ---
 title: Mendebug Spring Security
 date: 2017-05-27 17:03:50
-tags:
+categories:
+  - Pemrograman
+  - Spring
 ---
+![](/images/springboot.png)
 
 Spring security memberikan fasilitas untuk mendebug. Untuk menggunakannya cukup dengan menambahkan anotasi `@EnableWebSecurity(debug = true)` pada file KonfigurasiSecurity.
 

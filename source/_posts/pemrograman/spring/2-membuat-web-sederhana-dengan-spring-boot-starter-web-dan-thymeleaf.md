@@ -1,5 +1,5 @@
 ---
-title: Membuat Laman Web Sederhana denga Spring Boot dan Thymeleaf
+title: Membuat Web Menggunakan Spring Boot dan Thyeleaf
 date: 2017-04-23 14:17:30
 categories:
   - Pemrograman

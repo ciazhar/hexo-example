@@ -1,8 +1,11 @@
 ---
 title: SSO dengan Spring Security
 date: 2017-05-27 17:22:29
-tags:
+categories:
+  - Pemrograman
+  - Spring
 ---
+![](/images/springboot.png)
 
 # Aplikasi Authorization Sever dengan Spring Security
 
@@ -358,4 +361,4 @@ Pada Project tersebut terdapat 3 buah file utama yaitu :
         }
       }
    ```
-- 
+-

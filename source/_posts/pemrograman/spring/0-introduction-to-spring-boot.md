@@ -39,12 +39,12 @@ Berikut sekilas peta jalan yang akan kita pelajari untuk dapat membuat aplikasi 
 - [Generate Content di Client Side Menggunakan  AngularJS](https://ciazhar.github.io/2017/04/23/pemrograman/spring/3.3-generate-content-dari-client-side-dengan-AngularJS/)
 - [Generate Content di Server Side Menggunakan Spring Data JPA dan Thymeleaf(Obsolate)]()
 - [Kardinalitas pada Spring Data JPA](https://ciazhar.github.io/2017/04/23/pemrograman/spring/3.4-kardinalitas/)
-- [Konfigurasi yang sering digunakan untuk CRUD pada Spring Data JPA]()
+- [Debug Spring Data JPA]()
 
 ## Security
 - [Otoriasai login dengan Spring Security](https://ciazhar.github.io/2017/04/23/pemrograman/spring/4-otorisasi-login-dengan-spring-security/)
 - [Otorisasi controller dengan Spring Security]()
-- [Mendebug Spring Security]()
+- [Debug Spring Security]()
 - [Melihat Data User Login dengan Spring Security]()
 
 ## Template Engine

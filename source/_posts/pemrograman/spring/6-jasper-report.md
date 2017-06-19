@@ -1,5 +1,5 @@
 ---
-title: Jasper Report
+title: Membuat Report dengan Jasper Report
 date: 2017-04-23 14:17:39
 categories:
   - Pemrograman

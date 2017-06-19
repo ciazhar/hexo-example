@@ -5,7 +5,7 @@ categories:
   - Pemrograman
   - Android
 ---
-![](/images/android.png)
+![](https://mediarealm.com.au/wp-content/uploads/2013/02/Android-Banner1.jpg)
 # Android for Beginner
 ## Layouting
 ### View

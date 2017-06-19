@@ -1,11 +1,11 @@
 ---
-title: Thymeleaf
+title: Template Engine Thymeleaf
 date: 2017-04-23 14:17:38
 categories:
   - Pemrograman
   - Spring
 ---
-![](/images/springboot.png)
+![](https://elasticbeanstalk-us-east-1-851518566978.s3.amazonaws.com/permanentImages/7b60f151-9302-45bf-bd74-06b0e736bc55.png)
 # Layout dengan Thymeleaf
   Thymeleaf adalah template engine untuk JVM. Dia support HTMl, XML, TEXT, CSS, JS, dan RAW. Thymeleaf emmpunya kemampuan yang dikenal dengan Natural Template yaitu dimana kita dapat membuat 2 buah value yang sama. Hal ini mempermudah antara designer dan programer agar dapat bekerja bersama. Ketika value dari backed belum ada designer dapat menggunakan value html.
     ```html

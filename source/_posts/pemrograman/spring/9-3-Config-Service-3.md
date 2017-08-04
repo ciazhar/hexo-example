@@ -1,0 +1,50 @@
+---
+title: Config Service 3
+date: 2017-07-28 09:08:13
+categories:
+  - Pemrograman
+  - Spring
+---
+
+![](https://stocklogos-pd.s3.amazonaws.com/styles/logo-medium-alt/logos/image/1398937767-b70129ba6592929d32c0337c3eea2880.png?itok=NBZRaOhz)
+
+# Membuat config service vault
+
+Pada tutorial sebelumnya telah membahas pembuatan config service dimana file konfigurasinya disimpan di dalam file system atau dalam project. Sekarang kita akan mencoba membuat config service dimana file konfigurasinya disimpan di dalam vault server.
+
+> Vault is a tool for securely accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, and more. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log.(https://www.vaultproject.io/intro/index.html)
+
+Apabila anda belum menginstal vault server, anda dapat menginstalnya menggunakan tutorial berikut : http://discoposse.com/2016/11/04/installing-hashicorp-vault-on-ubuntu16-04/
+
+- Jalankan vault server
+```
+vault server -dev
+```
+Secara default vault server akan berjalan di localhost port 8200.
+
+- Konfigurasi vault address
+```
+set VAULT_ADDR=http://127.0.0.1:8200
+```
+
+- Tulis konfigurasi
+```
+vault write secret/myapp foo=bar bam=baz
+```
+
+- Baca konfigurasi
+```
+vault write secret/myapp foo=bar bam=baz
+```
+
+- Buat project spring + dependency spring cloud config
+- Tambahkan `@EnableConfigServer`
+- Ubah Konfigurasi
+  ```
+  #ubah port
+  server.port=8888
+
+  #ubah profile
+  server.profiles.active=vault
+  ```
+- Untuk meruquest API nya tambahkan header dengan nama `X-Config-Token` dengan value dari `root token` yang ada pada CLI vault server.

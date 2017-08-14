@@ -7,4 +7,10 @@ categories:
 ---
 ![](/images/springboot.png)
 
-Sedang dalam pembuatan Konten
+```yml
+spring:
+  jpa:
+      hibernate:
+        ddl-auto: none
+      show-sql: true  
+```

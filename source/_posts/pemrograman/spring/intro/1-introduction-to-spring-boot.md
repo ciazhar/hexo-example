@@ -27,37 +27,43 @@ All available features and modules are described in [the Modules section of the 
 Berikut sekilas peta jalan yang akan kita pelajari untuk dapat membuat aplikasi spring :
 
 ## Setup Project
-- [Setup Project Spring Boot](https://ciazhar.github.io/2017/04/23/pemrograman/spring/1-setup-project/)
+- [Setup Project Spring Boot](https://ciazhar.github.io/2017/04/23/pemrograman/spring/intro/2-setup-project-spring-boot/)
 
 ## Web
-- [Membuat Web Menggunakan Spring Boot dan Thyeleaf](https://ciazhar.github.io/2017/04/23/pemrograman/spring/2-membuat-web-sederhana-dengan-spring-boot-starter-web-dan-thymeleaf/)
+- [Membuat Web Menggunakan Spring Boot dan Thymeleaf](https://ciazhar.github.io/2017/04/23/pemrograman/spring/web/membuat-web-sederhana-dengan-spring-boot-starter-web-dan-thymeleaf/)
 
 ## Create Read Update Delete
-- [Setup Project Untuk CRUD dengan Spring Data JPA dan MySQL](https://ciazhar.github.io/2017/04/23/pemrograman/spring/3.0-setup-project-crud/)
-- [CRUD dengan Spring Data JPA](https://ciazhar.github.io/2017/04/23/pemrograman/spring/3.1-crud-dengan-spring-data-jpa/)
-- [Generate Content di Server Side Menggunakan Spring Data JPA dan Thymeleaf](https://ciazhar.github.io/2017/04/23/pemrograman/spring/3.2-generate-content-dari-server-side-dengan-thymeleaf/)
-- [Generate Content di Client Side Menggunakan  AngularJS](https://ciazhar.github.io/2017/04/23/pemrograman/spring/3.3-generate-content-dari-client-side-dengan-AngularJS/)
-- [Generate Content di Server Side Menggunakan Spring Data JPA dan Thymeleaf(Obsolate)]()
-- [Kardinalitas pada Spring Data JPA](https://ciazhar.github.io/2017/04/23/pemrograman/spring/3.4-kardinalitas/)
-- [Debug Spring Data JPA]()
+- [Setup Project Untuk CRUD dengan Spring Data JPA dan MySQL](https://ciazhar.github.io/2017/04/23/pemrograman/spring/jpa/1-setup-project-crud-jpa-mysql/)
+- [CRUD dengan Spring Data JPA + Thymeleaf (Server Side Rendering)](https://ciazhar.github.io/2017/04/23/pemrograman/spring/jpa/2.1-crud-jpa-thymeleaf/)
+- [CRUD dengan Spring Data JPA + AngularJS (Client Side Rendering / RESTfull API)](https://ciazhar.github.io/2017/04/23/pemrograman/spring/jpa/2.3-generate-content-dari-client-side-dengan-AngularJS/)
+<!-- - [Spring Boot REST API Design Pattern](https://ciazhar.github.io/2017/05/27/pemrograman/spring/jpa/2.2-crud-jpa-thymeleaf(extended)/) -->
+<!-- - [Kardinalitas pada Spring Data JPA](https://ciazhar.github.io/2017/04/23/pemrograman/spring/jpa/3-kardinalitas/)  -->
+- [Debug Spring Data JPA](https://ciazhar.github.io/2017/05/28/pemrograman/spring/jpa/4-Debug-Spring-Data-JPA/)  
 
 ## Security
-- [Otoriasai login dengan Spring Security](https://ciazhar.github.io/2017/04/23/pemrograman/spring/4-otorisasi-login-dengan-spring-security/)
-- [Otorisasi controller dengan Spring Security]()
-- [Debug Spring Security]()
-- [Melihat Data User Login dengan Spring Security]()
+- [Otoriasai login dengan Spring Security](https://ciazhar.github.io/2017/04/23/pemrograman/spring/security/1-otorisasi-login-dengan-spring-security/)
+- [Otorisasi controller dengan Spring Security](https://ciazhar.github.io/2017/05/27/pemrograman/spring/security/2-otorisasi-method-dengan-spring-security/) 
+- [Debug Spring Security](https://ciazhar.github.io/2017/05/27/pemrograman/spring/security/3-debug-spring-security/) 
+- [Melihat Data User Login dengan Spring Security](https://ciazhar.github.io/2017/05/27/pemrograman/spring/security/4-melihat-data-user-login-dengan-spring-security-md/)   
+- [Securing Spring Boot App with Spring OAuth2 + JSON Web Token (JWT)](https://ciazhar.github.io/2017/05/27/pemrograman/spring/security/5-oauth2-spring/)
+- [Single Signed On dengan Spring Security](https://ciazhar.github.io/2017/05/27/pemrograman/spring/security/6-SSO-dengan-Spring-Security/)
 
 ## Template Engine
-- [Layouting dengan Thymeleaf](https://ciazhar.github.io/2017/04/23/pemrograman/spring/5-layout-dengan-thymeleaf/)
+- [Template Engine Thymeleaf](https://ciazhar.github.io/2017/04/23/pemrograman/spring/template-engine/layout-dengan-thymeleaf/)
 
 ## Report
-- [Membuat Report dengan Jasper Report](https://ciazhar.github.io/2017/04/23/pemrograman/spring/6-jasper-report/)
+- [Membuat Report dengan Jasper Report](https://ciazhar.github.io/2017/04/23/pemrograman/spring/report/jasper-report/)
 
 ## Database Migration
-- [Migrasi Database dengan FlywayDB]()
+- [Migrasi Database dengan FlywayDB](https://ciazhar.github.io/2017/05/28/pemrograman/spring/database-migration/Database-Mirgation-dengan-FlywayDB/)
 
 ## Microservice
-- [Oauth2 dengan Spring Security]()
-- [Single Signed On dengan Spring Security]()
-- [Full Stack Application]()
-- [Microservice dengan Spring Cloud]()
+- [Microservice dengan Spring Cloud](https://ciazhar.github.io/2017/05/28/pemrograman/spring/microservice/Microservice-dengan-Spring-Cloud/)
+<!-- - [Spring Cloud Discovery Service (Eureka)]() -->
+- [Spring Cloud Config Service : Intro](https://ciazhar.github.io/2017/07/22/pemrograman/spring/microservice/config-service/1.GS-Config-Service/)
+- [Spring Cloud Config Service : File System](https://ciazhar.github.io/2017/07/28/pemrograman/spring/microservice/config-service/2.Config-Service-File-System/)
+- [Spring Cloud Config Service : Vault Server](https://ciazhar.github.io/2017/07/28/pemrograman/spring/microservice/config-service/3.Config-Service-Vault-Server/)
+- [Spring Cloud Config Service : Git Repositoty](https://ciazhar.github.io/2017/08/05/pemrograman/spring/microservice/config-service/4.Config-Service-Git-Repository/)
+<!-- - [Spring Cloud Config Service : Config Client]() -->
+<!-- - [Spring Cloud Config Service : Encryption & Decryption](https://ciazhar.github.io/2017/08/14/pemrograman/spring/microservice/config-service/5-Config-Service-Encryption-Decryption/) -->
+<!-- - Spring Cloud API Gateway (Zuul)() -->

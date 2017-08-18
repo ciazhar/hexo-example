@@ -9,34 +9,78 @@ categories:
 
 Eureka adalah discovery service yang didevelop oleh netfix. Discovery service sendiri berfungsi untuk menampung data semua service yang ada di microservice.
 
-# Server
-- Tambahkan dependency `Eureka Server`
+# Implement Eureka Server
+- Tambahkan dependency `spring-boot-eureka-server`
 - Tambahkan anotasi `@EnableEurekaServer` pada main class
-- baru (bootstrap.yml)
+- Tambahkan konfigurasi eureka service (application.yml)
 ```yml
-# config server port
+spring:
+  application:
+    name: eureka-service
+
 server:
-    port: 8761 
-
+  port: 8761
 
 eureka:
-    instance:
-        # config hostname
-        hostname: localhost
-    client:
-        # config tidak diperbolehkan aplikasi lain terintegrasi dengan eureka
-        register-with-eureka: false
-        # 
-        feign-registry: false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
 ```
 
-# Client
-- Tambahkan dependency `Eureka Client`
-- Tambahkan anotasi `@EnableEurekaClient` pada main class
-- Atur eureka server uri (bootstrap.yml)
+# Implement Eureka Client
+- Tambahkan dependency `spring-boot-starter-eureka`
+- Tambahkan anotasi `@EnableDiscoveryClient` pada main class
+- Tambahkan konfigurasi eureka server (bootstrap.yml)
 ```yml
+spring:
+  application:
+    name: eureka-client
 eureka:
-    client: 
-        service-url:
-            defaultZone: http://localhost:8761/eureka
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8002
 ```
+
+# Komunikasi Data antar Eureka Client
+Kita misalkan terdapat 2 eureka client, client pertama(spring.application.name=client-satu) berjalan di port 8001, sendangkan client kedua(spring.application.name=client-dua) berjalan di port 8002. Client kedua ingin mengambil API dari client pertama menggunakan eureka server. 
+Berikut contoh kode untuk komunikasi antar client. 
+- Controller pada client pertama
+```java
+@RestController
+public class SimpleController {
+
+    @RequestMapping("/api/halo/client-satu")
+    public String halo (){
+        return "Halo ini dari Client Satu";
+    }
+}
+```
+- Konfigurasi RestTemplate pada client kedua
+```java
+@Configuration
+public class SimpleConfig {
+
+    @Bean
+    @LoadBalanced
+    RestTemplate restTemplate(){
+        return new RestTemplate();
+    }
+}
+```
+- Controller pada client kedua
+```java
+@RestController
+public class SImpleController {
+    @Autowired private RestTemplate restTemplate;
+
+    @RequestMapping("/api/halo/client-dua")
+    public String halo(){
+        return restTemplate.getForObject("http://client-satu/api/halo/client-satu",String.class);
+    }
+}
+```
+Bisa dilihat pada controller client kedua mengambil API dari client pertama menggunakan RestTemplate dengan tidak mengghardcode url APInya, tetapi hanya mencantumkan `spring.application.name` dari client pertama. Dan data dari API tersebut kemudian disimpan dan dikembalikan dalam tipe data String.

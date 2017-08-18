@@ -7,7 +7,7 @@ categories:
 ---
 ![](https://stocklogos-pd.s3.amazonaws.com/styles/logo-medium-alt/logos/image/1398937767-b70129ba6592929d32c0337c3eea2880.png?itok=NBZRaOhz)
 
-Eureka adalah discovery service yang didevelop oleh netfix. Discovery service sendiri berfungsi untuk menampung data semua service yang ada di microservice.
+Eureka adalah discovery service yang didevelop oleh netfix. Discovery service sendiri berfungsi untuk menampung data semua service yang ada di microservice. Discovery service juga dapat mempermudah komunikasi antar service yang berdiri di atasnya.
 
 # Implement Eureka Server
 - Tambahkan dependency `spring-boot-eureka-server`

@@ -32,6 +32,9 @@ Berikut sekilas peta jalan yang akan kita pelajari untuk dapat membuat aplikasi 
 ## Web
 - [Membuat Web Menggunakan Spring Boot dan Thymeleaf](https://ciazhar.github.io/2017/04/23/pemrograman/spring/web/membuat-web-sederhana-dengan-spring-boot-starter-web-dan-thymeleaf/)
 
+## Template Engine
+- [Template Engine Thymeleaf](https://ciazhar.github.io/2017/04/23/pemrograman/spring/template-engine/layout-dengan-thymeleaf/)
+
 ## Create Read Update Delete
 - [Setup Project Untuk CRUD dengan Spring Data JPA dan MySQL](https://ciazhar.github.io/2017/04/23/pemrograman/spring/jpa/1-setup-project-crud-jpa-mysql/)
 - [CRUD dengan Spring Data JPA + Thymeleaf (Server Side Rendering)](https://ciazhar.github.io/2017/04/23/pemrograman/spring/jpa/2.1-crud-jpa-thymeleaf/)
@@ -48,22 +51,25 @@ Berikut sekilas peta jalan yang akan kita pelajari untuk dapat membuat aplikasi 
 - [Securing Spring Boot App with Spring OAuth2 + JSON Web Token (JWT)](https://ciazhar.github.io/2017/05/27/pemrograman/spring/security/5-oauth2-spring/)
 - [Single Signed On dengan Spring Security](https://ciazhar.github.io/2017/05/27/pemrograman/spring/security/6-SSO-dengan-Spring-Security/)
 
-## Template Engine
-- [Template Engine Thymeleaf](https://ciazhar.github.io/2017/04/23/pemrograman/spring/template-engine/layout-dengan-thymeleaf/)
-
 ## Report
 - [Membuat Report dengan Jasper Report](https://ciazhar.github.io/2017/04/23/pemrograman/spring/report/jasper-report/)
+
+## Mail
+- [Membuat Register dengan Verifikasi Email](https://ciazhar.github.io/2017/08/17/pemrograman/spring/mail/sending-mail/)
 
 ## Database Migration
 - [Migrasi Database dengan FlywayDB](https://ciazhar.github.io/2017/05/28/pemrograman/spring/database-migration/Database-Mirgation-dengan-FlywayDB/)
 
 ## Microservice
 - [Microservice dengan Spring Cloud](https://ciazhar.github.io/2017/05/28/pemrograman/spring/microservice/Microservice-dengan-Spring-Cloud/)
-<!-- - [Spring Cloud Discovery Service (Eureka)]() -->
+- [Spring Cloud Discovery Service (Eureka)](https://ciazhar.github.io/2017/08/15/pemrograman/spring/microservice/discovery-service-eureka/netflix-eureka-as-discovery-service/)
+- [Spring Cloud Circuit Breaker (Hystrix)](https://ciazhar.github.io/2017/08/18/pemrograman/spring/microservice/circuit-breaker-hystrix/circuit-breaker-with-hystrix/)
+- [Spring Cloud API Gateway (Zuul)](https://ciazhar.github.io/2017/08/18/pemrograman/spring/microservice/api-gateway-zuul/zuul-as-api-gateway/)
 - [Spring Cloud Config Service : Intro](https://ciazhar.github.io/2017/07/22/pemrograman/spring/microservice/config-service/1.GS-Config-Service/)
 - [Spring Cloud Config Service : File System](https://ciazhar.github.io/2017/07/28/pemrograman/spring/microservice/config-service/2.Config-Service-File-System/)
 - [Spring Cloud Config Service : Vault Server](https://ciazhar.github.io/2017/07/28/pemrograman/spring/microservice/config-service/3.Config-Service-Vault-Server/)
 - [Spring Cloud Config Service : Git Repositoty](https://ciazhar.github.io/2017/08/05/pemrograman/spring/microservice/config-service/4.Config-Service-Git-Repository/)
-<!-- - [Spring Cloud Config Service : Config Client]() -->
-<!-- - [Spring Cloud Config Service : Encryption & Decryption](https://ciazhar.github.io/2017/08/14/pemrograman/spring/microservice/config-service/5-Config-Service-Encryption-Decryption/) -->
-<!-- - Spring Cloud API Gateway (Zuul)() -->
+- [Spring Cloud Config Service : Config Client](https://ciazhar.github.io/2017/08/14/pemrograman/spring/microservice/config-service/5-Config-Service-Cient/) 
+- [Spring Cloud Config Service : Encryption & Decryption](https://ciazhar.github.io/2017/08/14/pemrograman/spring/microservice/config-service/5-Config-Service-Encryption-Decryption/) 
+- [Spring Cloud Config Service : Refresh Scope & Health](https://ciazhar.github.io/2017/08/14/pemrograman/spring/microservice/config-service/7-Config-Service-Refresh-Scope-and-Health-Check/) 
+- [Spring Cloud Config Service : Security](https://ciazhar.github.io/2017/08/15/pemrograman/spring/microservice/config-service/8-Spring-Config-Service-Security/) 

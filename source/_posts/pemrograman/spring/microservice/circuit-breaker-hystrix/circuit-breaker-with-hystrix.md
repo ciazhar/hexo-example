@@ -1,18 +1,21 @@
 ---
-title: Circuit Breaker With Hystrix
+title: Membuat Circuit Breaker menggunakan Netflix Hystrix
 date: 2017-08-18 16:45:52
 categories:
   - Pemrograman
   - Spring
 ---
-![](https://stocklogos-pd.s3.amazonaws.com/styles/logo-medium-alt/logos/image/1398937767-b70129ba6592929d32c0337c3eea2880.png?itok=NBZRaOhz)
+![](https://cdn-images-1.medium.com/max/264/0*gRZh5dHFWz-nFu7Z.png)
+
+[Spring Cloud Netflix Hystrix](https://github.com/Netflix/Hystrix/blob/master/README.md) digunakan untuk memeberikan fallback apabila terjadi kegagalan saat request antar service dengan cara melakukan Load Balancing.
 
 # Defending API from failure by bringing callback
-Sebagai contoh kita akan menggunakan project dari tutorial sebelumnya (netflix eureka). Konfigurasi berikut akan dilakukan pada client kedua (spring.application.name=client-dua).
+[Sebelumnya](https://ciazhar.github.io/2017/08/15/pemrograman/spring/microservice/discovery-service-eureka/netflix-eureka-as-discovery-service/) kita telah membuat eureka server. Sekarang kita akan coba mendefend API kita yang tedapat pada aplikasi `other-eureka-client`. Berikut konfigurasi pada client kedua.
 
 - Tambahkan dependency `spring-cloud-starter-hystrix`.
 - Tambahkan anotasi `@EnableCircuitBreaker` pada main class.
-- Tambahkan anotasi `@HystrixCommand` pada API yang ingin di fallback. Tambahkan parameter `fallbackMethod` di dalam command tersebut. Isi dengan nama methode yang berisi string yang akan ditampilkan saat fallback.
+- Tambahkan anotasi `@HystrixCommand` pada API yang ingin di fallback. Tambahkan parameter `fallbackMethod` di dalam command tersebut. Valuenya merujuk pada nama methode yang berisi string yang akan ditampilkan saat fallback.
+
 ```java
 ///Berikut contoh controller APInya
 @RequestMapping("/api/halo")
@@ -36,3 +39,5 @@ hystrix:
           thread:
             timeoutInMilliseconds: 10000
 ```
+
+Apabila request dari `other-eureka-client` ke `eureka-client` sukses makan akan tampil String seperti "Halo ini dari Client Satu". Sedangkan apabila gagal maka akan tampil String seperti "Fallback Halo".

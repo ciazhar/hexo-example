@@ -1,5 +1,5 @@
 ---
-title: Sending Mail + Verifikasi Email
+title: Mengirim Email dan Verifikasi Lewat Email
 date: 2017-08-17 07:40:10
 categories:
   - Pemrograman
@@ -7,15 +7,15 @@ categories:
 ---
 ![](/images/springboot.png)
 
-# Sending Email
-- Tambahkan Dependency `Spring Boot Mail`
-```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-mail</artifactId>
-</dependency>
-```
+Pada tutorial kali ini kita akan coba mengirim email dan verifikasi lewat email. Kita akan menggunakan konsep register akun implementasinya.
+
+# Mengirim Email
+
+- Tambahkan Dependency `spring-boot-starter-mail`
+
+
 - Konfigurasi Mail Server
+
 ```yml
 # Mail Configuration
   mail:
@@ -34,7 +34,9 @@ categories:
           timemout: 5000
           writetimeout: 5000
 ```
+
 - Membuat Model Email.
+
 ```java
 public class EmailStatus{
     public static final String SUCCESS = "SUCCESS";
@@ -93,7 +95,9 @@ public class EmailStatus{
     }
 }
 ```
+
 - Membuat component untuk send email
+
 ```java
 @Component
 public class EmailSender{
@@ -127,7 +131,9 @@ public class EmailSender{
     }
 }
 ```
+
 - Membuat component
+
 ```java
 @Component
 public class EmailHtmlSender{
@@ -141,7 +147,9 @@ public class EmailHtmlSender{
     }
 }
 ```
+
 - Membuat html
+
 ```html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
@@ -149,26 +157,29 @@ public class EmailHtmlSender{
     <title th:remove="all">Order Confirmation</title>
 </head>
 <body>
-<div>
-     
-        <h2 th:text="${title}">title</h2>
-        <p th:text="${description}"></p>
-         <p>
-            <a th:href="@{http://localhost:8080/activate(email=${email})}">Verification Link</a>
-        </p>      
+<div>     
+    <h2 th:text="${title}">title</h2>
+    <p th:text="${description}"></p>
+        <p>
+        <a th:href="@{http://localhost:8080/activate(email=${email})}">Verification Link</a>
+    </p>      
 </div>
  
 </body>
 </html>
 ```
+
 - Membuat service
+
 ```java
 public interface EmailService{
 
     EmailStatus sendEmail(RegisterForm form);
 }
 ```
+
 - Membuat service impl
+
 ```java
 @Service
 public class EmailServiceImpl implements EmailService{
@@ -189,7 +200,9 @@ public class EmailServiceImpl implements EmailService{
     }
 }
 ```
+
 - Membuat controller
+
 ```java
 @PreAuthorize("permitAll()")
     @RequestMapping(method = RequestMethod.POST,value = "/register")
@@ -202,7 +215,9 @@ public class EmailServiceImpl implements EmailService{
 ```
 
 # Verifikasi Email
+
 - Membuat controller
+
 ```java
 public class UserThymeleafController{
 
@@ -228,6 +243,7 @@ public class UserThymeleafController{
 ```
 
 - Membuat html
+
 ```html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">

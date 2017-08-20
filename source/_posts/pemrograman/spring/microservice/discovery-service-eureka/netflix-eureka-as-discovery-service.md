@@ -10,7 +10,7 @@ categories:
 Eureka adalah discovery service yang didevelop oleh netfix. Discovery service sendiri berfungsi untuk menampung data semua service yang ada di microservice. Discovery service juga dapat mempermudah komunikasi antar service yang berdiri di atasnya.
 
 # Implement Eureka Server
-- Tambahkan dependency `spring-boot-eureka-server`
+- Tambahkan dependency `spring-cloud-eureka-server`
 - Tambahkan anotasi `@EnableEurekaServer` pada main class
 - Tambahkan konfigurasi eureka service (application.yml)
 ```yml
@@ -30,7 +30,7 @@ eureka:
 ```
 
 # Implement Eureka Client
-- Tambahkan dependency `spring-boot-starter-eureka`
+- Tambahkan dependency `spring-cloud-starter-eureka`
 - Tambahkan anotasi `@EnableDiscoveryClient` pada main class
 - Tambahkan konfigurasi eureka server (bootstrap.yml)
 ```yml
@@ -46,20 +46,22 @@ server:
 ```
 
 # Komunikasi Data antar Eureka Client
-Kita misalkan terdapat 2 eureka client, client pertama(spring.application.name=client-satu) berjalan di port 8001, sendangkan client kedua(spring.application.name=client-dua) berjalan di port 8002. Client kedua ingin mengambil API dari client pertama menggunakan eureka server. 
+Kita misalkan terdapat 2 eureka client, client pertama(spring.application.name=eureka-client) berjalan di port 8002, sendangkan client kedua(spring.application.name=other-eureka-client) berjalan di port 8003. Client kedua ingin mengambil API dari client pertama menggunakan eureka server. 
 Berikut contoh kode untuk komunikasi antar client. 
 - Controller pada client pertama
+
 ```java
 @RestController
 public class SimpleController {
 
-    @RequestMapping("/api/halo/client-satu")
+    @RequestMapping("/api/halo")
     public String halo (){
         return "Halo ini dari Client Satu";
     }
 }
 ```
 - Konfigurasi RestTemplate pada client kedua
+
 ```java
 @Configuration
 public class SimpleConfig {
@@ -72,14 +74,15 @@ public class SimpleConfig {
 }
 ```
 - Controller pada client kedua
+
 ```java
 @RestController
 public class SImpleController {
     @Autowired private RestTemplate restTemplate;
 
-    @RequestMapping("/api/halo/client-dua")
+    @RequestMapping("/api/halo")
     public String halo(){
-        return restTemplate.getForObject("http://client-satu/api/halo/client-satu",String.class);
+        return restTemplate.getForObject("http://eureka-client/api/halo",String.class);
     }
 }
 ```

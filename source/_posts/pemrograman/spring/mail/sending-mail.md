@@ -9,6 +9,8 @@ categories:
 
 Pada tutorial kali ini kita akan coba mengirim email dan verifikasi lewat email. Kita akan menggunakan konsep register akun implementasinya.
 
+https://myaccount.google.com/lesssecureapps
+
 # Mengirim Email
 
 - Tambahkan Dependency `spring-boot-starter-mail`

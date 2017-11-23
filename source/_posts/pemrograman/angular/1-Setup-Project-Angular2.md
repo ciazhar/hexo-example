@@ -141,7 +141,8 @@ Hasilnya dapat anda lihat pada folder dist
 Step ini optional karena untuk css bisa pake framework yang lain atau menginputkan sendiri cssnya. Step ini hanya untuk mempermudah saja.
 Untuk menginstallnya dapat menggunakan kode
 ```
-npm install ng2-bootstrap bootstrap --save
+npm install --save @ng-bootstrap/ng-bootstrap
+npm install bootstrap@4.0.0-alpha.6
 ```
 Setelah itu includekan bootstrapnya ke file angular-cli.json.
 ```json

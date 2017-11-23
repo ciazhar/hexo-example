@@ -1,8 +1,12 @@
 ---
-title: security
+title: Security in Vertx 
 date: 2017-08-28 15:40:16
-tags:
+categories:
+  - Pemrograman
+  - Vertx
 ---
+
+![](/images/vertx.png)
 
 
 # Session

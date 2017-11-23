@@ -5,9 +5,7 @@ categories:
   - Pemrograman
   - Spring
 ---
-![](/images/springboot.png)
-
-
+![](/images/spring-boot-banner.png)
 
 - jalankan seperti biasa projectnya maka akan di generate folder resource/db/migration
 - koneksikan dengan database agar model dapat di ubah menjadi tabel

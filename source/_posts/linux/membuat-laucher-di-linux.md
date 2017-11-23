@@ -7,6 +7,8 @@ categories:
   - Linux
 ---
 
+![](/images/linux.jpg)
+
 # Membuat Launcher di Linux
 
 Terdapat banyak cara dalam menginstall aplikasi di linux tergantung dari jenis filenya, diantaranya :

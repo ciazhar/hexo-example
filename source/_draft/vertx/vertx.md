@@ -1,8 +1,12 @@
 ---
-title: vertx
+title: Introduction to Vertx
 date: 2017-08-27 17:31:34
-tags:
+categories:
+  - Pemrograman
+  - Vertx
 ---
+
+![](/images/vertx.png)
 
 # Membuat project vertx
 Struktur folder

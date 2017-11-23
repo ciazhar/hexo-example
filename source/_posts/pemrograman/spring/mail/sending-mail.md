@@ -5,7 +5,7 @@ categories:
   - Pemrograman
   - Spring
 ---
-![](/images/springboot.png)
+![](/images/spring-boot-banner.png)
 
 Pada tutorial kali ini kita akan coba mengirim email dan verifikasi lewat email. Kita akan menggunakan konsep register akun implementasinya.
 

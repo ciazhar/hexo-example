@@ -4,6 +4,8 @@ date: 2017-08-21 17:22:41
 tags:
 ---
 
+![](https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/CloudFoundryCorp_vertical.svg/1280px-CloudFoundryCorp_vertical.svg.png)
+
 # Definisi Cloud Foundry
 
 Cloud Foundry adalah suatu Paas(Platform as a Service) berbasis open source yang disediakan dikembangkan Pivotal. Platform as a service sendiri adalah service yang digunakan untuk mendeploy aplikasi kita ke cloud. 

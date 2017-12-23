@@ -8,6 +8,7 @@ sticky: true
 ---
 
 ![](/images/spring.png)
+
 # Sekilas tentang Spring
 
 The [Spring Framework](http://spring.io) provides a comprehensive programming and configuration model for modern [Java-based](https://en.wikipedia.org/wiki/List_of_JVM_languages) enterprise applications - on any kind of deployment platform. A key element of Spring is infrastructural support at the application level: Spring focuses on the "plumbing" of enterprise applications so that teams can focus on application-level business logic, without unnecessary ties to specific deployment environments.
@@ -22,11 +23,12 @@ The [Spring Framework](http://spring.io) provides a comprehensive programming an
 
 All available features and modules are described in [the Modules section of the reference documentation](http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/overview.html#overview-modules). Their [maven/gradle coordinates are also described there](http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/overview.html#dependency-management).
 
-
 # Roadmap Belajar Spring
-Berikut sekilas peta jalan yang akan kita pelajari untuk dapat membuat aplikasi spring :
+
+Berikut sekilas peta jalan yang dapat anda pelajari untuk dapat membuat aplikasi spring :
 
 ## Setup Project
+
 - [Setup Project Spring Boot](https://ciazhar.github.io/2017/04/23/pemrograman/spring/intro/2-setup-project-spring-boot/)
 
 ## Web

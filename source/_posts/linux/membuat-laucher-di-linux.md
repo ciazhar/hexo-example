@@ -11,15 +11,38 @@ categories:
 
 # Membuat Launcher di Linux
 
-Terdapat banyak cara dalam menginstall aplikasi di linux tergantung dari jenis filenya, diantaranya :
-- Menggunakan `apt install` pada terminal
-- Menggunakan executable file dengan ektensi seperti `.deb`, `.rpm` / `.sh`
+Apakah anda pernah menginstall apikasi di linux ? Sebenearnya di linux terdapat banyak cara dalam menginstall aplikasi tergantung dari jenis filenya, diantaranya :
+
+- Menggunakan Software Center.
+- Menggunakan perintah `sudo apt install {nama_package}` pada terminal
+- Menggunakan executable file dengan ektensi seperti `.deb`, `.rpm` atau `.sh`
 - Menggunakan binary file yang di kompres dalam `.tar.gz`.
 
-Untuk aplikasi yang di kompress dalam `.tar.gz` karena untuk menggunakanya hanya dicopy kedalam direktori kita dan tidak diinstall, atau aplikasi yang diinstall terkadang tidak otomatis membuat Launcher. Launcher bisa dibilang cara menjalankan aplikasi tersebut melalui GUI. Biasanya terletak di `whisker`. 
-Oleh karena itu kita akan coba membuat Launcher untuk aplikasi kita.
-Untuk kalo ini saya akan memberi contoh menggunakan aplikasi `Robomongo`. 
-Caranya cukup mudah, pertama buat file dengan ekstensi `.desktop` dengan nama sesuai nama aplikasi kita. Kemudian isi file tersebut dengan format seperti :
+Untuk aplikasi yang di kompress dalam `.tar.gz`, terkadang setelah menginstallnya, sistem tidak otomatis membuat Launcher untuk aplikasi tersebut. Sehingga kita harus membuat Launcher secara manual.
+Launcher sendiri bisa dibilang cara GUI/Shortcut untuk menjalankan aplikasi tersebut. Biasanya terletak di `whisker` (star menu kalo di w*nd*ws).
+
+Oleh karena itu kita akan coba membuat Launcher untuk aplikasi kita. Saya akan memberi contoh untuk membuat launcher aplikasi `Robomongo`.
+
+## 1. Pindah direktori ke `/usr/share/applications/` menggunakan terminal
+
+```bash
+cd /usr/share/appications/
+```
+
+## 2. Buat file berekesensi `.dekstop`. Nama file dapat diesusaikan dengan nama apikasi
+
+```bash
+touch robomongo.desktop
+```
+
+## 3. Buka file tersebut menggunakan teks editor kesayangan anda. Disini saya akan menggunakan gedit
+
+```bash
+sudo gedit robomongo.desktop
+```
+
+## 4. Isi file tersebut dengan format seperti di bawah ini
+
 ```desktop
 [Desktop Entry]
 Version=
@@ -32,7 +55,9 @@ Path=
 Terminal=
 StartupNotify=
 ```
+
 Keterangan :
+
 - Version       : versi aplikasi
 - Type          : tipe aplikasi
 - Name          : nama aplikasi
@@ -44,7 +69,8 @@ Keterangan :
 - StartupNotify : apakah akan ada notifikasi waktu aplikasi berjalan
 
 Berikut contohnya untuk aplikasi Robomongo saya :
-```
+
+```desktop
 [Desktop Entry]
 Version=1.0
 Type=Application
@@ -56,7 +82,5 @@ Path=/home/ciazhar/Application/robomongo-1.0.0
 Terminal=false
 StartupNotify=false
 ```
-
-Kemudian simpan file tersebut di direktori `/usr/share/applications/`. Hati hati dengan dalam menyimpan file karena membutuhkan Permission.
 
 Finally Laucher telah dapat digunakan dan sudah tersedia di whisker.

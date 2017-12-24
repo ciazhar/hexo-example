@@ -19,7 +19,7 @@ sticky: true
 
 Untuk rangkaian tutorial berikut kita akan mengguakan Android Native sebagai platform dan Android Studio sebagai IDE. Sekian Happy Coding :D.
 
-# Roadmap Belajar Android Native menggunakan Android Studio
+# Roadmap Belajar Android Java menggunakan Android Studio
 
 ### [1. Setup Project Android]()
 ### [2. Belajar Tentang View](http://ciazhar.github.io/2017/04/23/pemrograman/android/1-view/)

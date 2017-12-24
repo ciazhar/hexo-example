@@ -9,41 +9,72 @@ sticky: true
 
 ![](/images/spring.png)
 
-# Sekilas tentang Spring
+# Sekilas tentang Spring Framework
 
-The [Spring Framework](http://spring.io) provides a comprehensive programming and configuration model for modern [Java-based](https://en.wikipedia.org/wiki/List_of_JVM_languages) enterprise applications - on any kind of deployment platform. A key element of Spring is infrastructural support at the application level: Spring focuses on the "plumbing" of enterprise applications so that teams can focus on application-level business logic, without unnecessary ties to specific deployment environments.
+>[Spring Framework](http://spring.io) adalah Fullstack Web Framework yang dikembangkan oleh Pivotal menggunakan bahasa bahasa JVM (seperti Java, Kotlin dan Groovy).
 
-# Features
+Spring sendiri telah mengalami evolusi sampai beberapa kali, diantara lain :
 
-- Dependency Injection
-- Aspect-Oriented Programming including Spring's declarative transaction management
-- Spring MVC web application and RESTful web service framework
-- Foundational support for JDBC, JPA, JMS
-- Much more…
+- __Spring MVC__. Aplikasi spring edisi ini untuk masih dikonfigurasi secara manual, sehingga dalam development masih lambat. Web Server juga masih terpisah sehingga harus di deploy secara manual.
+- __Spring MVC yang di wrap dengan Spring Boot__. Dengan adanya Spring Boot, setup project menjadi lebih cepat dan mudah. Web server juga sudah di embed sehingga tidak perlu di deploy secara manual. Secara default menggunakan Tomcat Web Server.
+- __Spring Webflux yang di wrap dengan Spring Boot__. Spring Webflux menawarkan Reactive Programming yang Non Blocking. Web Server default diganti dengan netty yang lebih leightweight. Sehingga performa dari aplikasi spring dapat meningkat.
 
-All available features and modules are described in [the Modules section of the reference documentation](http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/overview.html#overview-modules). Their [maven/gradle coordinates are also described there](http://docs.spring.io/spring-framework/docs/current/spring-framework-reference/html/overview.html#dependency-management).
+Sejauh ini secara pribadi spring merupakan framework paling lengkap yang pernah saya temui. Spring dapat mengatasi permasalahan  mulai dari masalah REST API sampai Microservice.
 
-# Roadmap Belajar Spring
+Framework ini merupakan __compiled framework__ karena dalam menjalankannya harus di compile terlebih dahulu. Oleh karena itu Spring memiliki performa yang lumayan bagus. Saya pernah melakukan benchmark menggunakan __wrk__ untuk melakukan hit API mendapatkan hasil sekitar 30.000an request per detik. Lebih detailnya dapat di cek di [Laman Berikut]().
 
-Berikut sekilas peta jalan yang dapat anda pelajari untuk dapat membuat aplikasi spring :
+Walaupun memiliki performa yang lumayan, framework ini memiliki waktu startup yang relatif lama, sekitar 10 detik lebih. Sehingga apabila anda memiliki RAM lebih saya menyarankan menggunakan build tool __Gradle__ daripada Maven untuk mempercepat proses kompilasi.
 
-## Setup Project
+## Roadmap Belajar Spring
 
-- [Setup Project Spring Boot](https://ciazhar.github.io/2017/04/23/pemrograman/spring/intro/2-setup-project-spring-boot/)
+Berikut sekilas peta jalan yang dapat anda pelajari untuk dapat membuat aplikasi spring. Happy Coding :D.
 
-## Web
-- [Membuat Web Menggunakan Spring Boot dan Thymeleaf](https://ciazhar.github.io/2017/04/23/pemrograman/spring/web/membuat-web-sederhana-dengan-spring-boot-starter-web-dan-thymeleaf/)
+### [1. Setup Project Spring Boot](https://ciazhar.github.io/2017/04/23/pemrograman/spring/intro/2-setup-project-spring-boot/)
 
-## Template Engine
-- [Template Engine Thymeleaf](https://ciazhar.github.io/2017/04/23/pemrograman/spring/template-engine/layout-dengan-thymeleaf/)
+### [2. Membuat Web pada Spring Boot menggunakan Template Engine](https://ciazhar.github.io/2017/04/23/pemrograman/spring/web/membuat-web-sederhana-dengan-spring-boot-starter-web-dan-thymeleaf/)
+##### [2.1. Berkenalan dengan Template Engine Thymeleaf]()
+##### [2.1. Membuat Aplikasi CRUD menggunakan Spring Boot, Spring Data dan Thymeleaf]()
 
-## Create Read Update Delete
+### [3. Membuat REST API pada Spring Boot]()
+##### [3.1. Membuat REST API Sederhana]()
+##### [3.2. Membuat REST API dengan Spring Boot dan Spring Data JPA]()
+##### [3.3. Membuat REST API  dengan Spring Boot dan Spring Data MongoDB]()
+
+
+### [4. Mengamankan Aplikasi Spring Boot]() 
+##### [4.1. Basic Auth In Memory]()
+##### [4.2. Basic Auth Database]()
+##### [4.3. OAuth2]()
+##### [4.4. JWT]()
+
+### [5. [Reactive] Membuat REST API pada Spring Boot]()
+##### [5.1. Membuat REST API Sederhana]()
+##### [5.2. Membuat REST API dengan Spring Boot dan Spring Data JPA]()
+##### [5.3. Membuat REST API  dengan Spring Boot dan Spring Data MongoDB]()
+
+
+### [6. [Reactive] Mengamankan Aplikasi Spring Boot]()
+##### [6.1. Basic Auth In Memory]()
+##### [6.2. Basic Auth Database]()
+
+### [7. Membuat Mail Server]()
+
+### [8. Membuat Report menggunakan Jasper Report]()
+
+### [9. Database Migration menggunakan FlywayDB]()
+
+### [9. API documentation menggunakan Swagger2]()
+
+### [7. Membuat Microservice dengan Spring Cloud]()
+
+
+<!-- ## Create Read Update Delete
 - [Setup Project Untuk CRUD dengan Spring Data JPA dan MySQL](https://ciazhar.github.io/2017/04/23/pemrograman/spring/jpa/1-setup-project-crud-jpa-mysql/)
 - [CRUD dengan Spring Data JPA + Thymeleaf (Server Side Rendering)](https://ciazhar.github.io/2017/04/23/pemrograman/spring/jpa/2.1-crud-jpa-thymeleaf/)
-- [CRUD dengan Spring Data JPA + AngularJS (Client Side Rendering / RESTfull API)](https://ciazhar.github.io/2017/04/23/pemrograman/spring/jpa/2.3-generate-content-dari-client-side-dengan-AngularJS/)
+- [CRUD dengan Spring Data JPA + AngularJS (Client Side Rendering / RESTfull API)](https://ciazhar.github.io/2017/04/23/pemrograman/spring/jpa/2.3-generate-content-dari-client-side-dengan-AngularJS/) -->
 <!-- - [Spring Boot REST API Design Pattern](https://ciazhar.github.io/2017/05/27/pemrograman/spring/jpa/2.2-crud-jpa-thymeleaf(extended)/) -->
 <!-- - [Kardinalitas pada Spring Data JPA](https://ciazhar.github.io/2017/04/23/pemrograman/spring/jpa/3-kardinalitas/)  -->
-- [Debug Spring Data JPA](https://ciazhar.github.io/2017/05/28/pemrograman/spring/jpa/4-Debug-Spring-Data-JPA/)  
+<!-- - [Debug Spring Data JPA](https://ciazhar.github.io/2017/05/28/pemrograman/spring/jpa/4-Debug-Spring-Data-JPA/)  
 
 ## Security
 - [Otoriasai login dengan Spring Security](https://ciazhar.github.io/2017/04/23/pemrograman/spring/security/1-otorisasi-login-dengan-spring-security/)
@@ -74,4 +105,4 @@ Berikut sekilas peta jalan yang dapat anda pelajari untuk dapat membuat aplikasi
 - [Spring Cloud Config Service : Config Client](https://ciazhar.github.io/2017/08/14/pemrograman/spring/microservice/config-service/5-Config-Service-Cient/) 
 - [Spring Cloud Config Service : Encryption & Decryption](https://ciazhar.github.io/2017/08/14/pemrograman/spring/microservice/config-service/5-Config-Service-Encryption-Decryption/) 
 - [Spring Cloud Config Service : Refresh Scope & Health](https://ciazhar.github.io/2017/08/14/pemrograman/spring/microservice/config-service/7-Config-Service-Refresh-Scope-and-Health-Check/) 
-- [Spring Cloud Config Service : Security](https://ciazhar.github.io/2017/08/15/pemrograman/spring/microservice/config-service/8-Spring-Config-Service-Security/) 
+- [Spring Cloud Config Service : Security](https://ciazhar.github.io/2017/08/15/pemrograman/spring/microservice/config-service/8-Spring-Config-Service-Security/)  -->
